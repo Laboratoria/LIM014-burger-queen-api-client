@@ -1,0 +1,36 @@
+.login-container{
+    width: 100%;
+    height: 100vh;
+    background: url('../../../assets/loginfondo.svg') no-repeat right top;
+    background-size: 65%;
+    main{
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+}
+header{
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    h1{
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 62px;
+        color:#323232;
+    }
+    .color-queen{
+        color: #EF2626;
+    }
+}
+.img-login{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img{
+        width: 500px;
+        height: 509px;
+    }
+}
+.form-container{
+    background-color: crimson;
+    width: 100%;
+    height: 100%;
+}
