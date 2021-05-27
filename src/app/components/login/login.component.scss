@@ -1,18 +1,20 @@
+$font1: 'Alfa Slab One', cursive;
+$font2: 'Poppins', sans-serif;
+
 .login-container{
     width: 100%;
     height: 100vh;
-    background: url('../../../assets/loginfondo.svg') no-repeat right top;
-    background-size: 65%;
+    background-color: #FFC839;
     main{
         display: grid;
-        grid-template-rows: 1fr 65%;
+        grid-template-rows: 70% 30%;
     }
 }
 header{
     padding: 40px 20px 20px 20px;
     text-align: center;
     h1{
-        font-family: 'Alfa Slab One', cursive;
+        font-family: $font1;
         font-size: 62px;
         color:#323232;
     }
@@ -21,27 +23,43 @@ header{
     }
 }
 .img-login{
-    background-color: #EF2626;
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin: 0 auto;
     img{
-        width: 500px;
-        height: 509px;
+        width: 100%;
+        /* height: 400px; */
     }
 }
 .form-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     .login-form{
-        
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
+        .log-in{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: #EF2626;
+            padding: 15px;
+            color: white;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+            font-family: $font2;
+        }
+    }
+    h3{
+        font-family: $font2;
+        font-size: 30px;
+        font-weight:200;
+        color:#323232;
     }
 }
 .div-imput{
@@ -50,11 +68,44 @@ header{
     input{
         padding: 5px 30px;
         font-size: 20px;
-        font-family: 'Poppins', sans-serif;
+        font-family: $font2;
     }
     span{
         position: absolute;
         top: 25%;
         left: 5px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .login-container{
+        main{
+            grid-template-rows: none;
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
+/* @media screen and (min-width: 1366px){
+    .img-login{
+        img{
+            width: 600px;
+            height: 600px;
+        }
+    }
+    header{
+        h1{
+            font-family: $font1;
+            font-size: 70px;
+            color:#323232;
+        }
+    }
+}
+ */
+ @media screen and (max-width: 411px){
+    header{
+        h1{
+            font-family: $font1;
+            font-size: 30px;
+            color:#323232;
+        }
     }
 }
