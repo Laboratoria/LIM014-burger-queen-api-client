@@ -7,7 +7,9 @@ import { LoginComponent } from './components/login/login.component';
 import { MenuPrincipalComponent } from './components/admin/menu-principal/menu-principal.component';
 import { UserCatalogoComponent } from './components/admin/user-catalogo/user-catalogo.component';
 import { ProductsCatalogoComponent } from './components/admin/products-catalogo/products-catalogo.component';
-import { NavegadorComponent } from '../app/components/navegador/navegador.component';
+import { NavegadorComponent } from './components/admin/navegador/navegador.component';
+import { AddUserComponent } from './components/admin/user-catalogo/add-user/add-user.component';
+import { ListUserComponent } from './components/admin/user-catalogo/list-user/list-user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavegadorComponent } from '../app/components/navegador/navegador.compon
     MenuPrincipalComponent,
     UserCatalogoComponent,
     NavegadorComponent,
-    ProductsCatalogoComponent
+    ProductsCatalogoComponent,
+    AddUserComponent,
+    ListUserComponent
   ],
   imports: [
     BrowserModule,
