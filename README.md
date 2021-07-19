@@ -1,4 +1,4 @@
-# Burger Queen (API Client)
+# Esquina Caliente
 
 ## Índice
 
@@ -8,6 +8,7 @@
 * [4. Consideraciones](#4-consideraciones)
 * [5. Criterios de aceptación del proyecto](#5-criterios-de-aceptación-del-proyecto)
 * [6. Pistas / tips](#6-pistas--tips)
+* [7. Entrega](#7-entrega)
 
 ***
 
@@ -21,7 +22,7 @@ Este proyecto tiene dos áreas: interfaz (cliente) y API (servidor). Nuestra
 clienta nos ha solicitado desarrollar la interfaz que se integre con la API
 que otro equipo de desarrolladoras está trabajando simultáneamente
 
-[React](https://reactjs.org/) y [Angular](https://angular.io/)
+[React](https://reactjs.org/) y [Vue](https://vuejs.org/)
 son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
 lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
 En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
@@ -51,7 +52,7 @@ en los que primero hay que asegurarse de cumplir con lo requerido.
 
 Esta es la información que tenemos dxl clientx:
 
-> Somos **Burguer Queen**, una cadena de comida 24hrs.
+> Somos **Esquina Caliente**, una cadena de comida 24hrs.
 >
 > Nuestra propuesta de servicio 24hrs ha tenido muy buena acogida y, para
 > seguir creciendo, necesitamos un sistema que nos ayude a tomar los pedidos de
@@ -100,7 +101,7 @@ qué parámetros esperan, qué deben responder, etc.
 ## 3. Objetivos de aprendizaje
 
 El objetivo principal de es aprender a construir una _interfaz web_ usando
-el _framework_ elegido (React, Angular o Vue). Todos estos frameworks de
+el _framework_ elegido (React o Vue). Todos estos frameworks de
 Front-end tratan de solucionar el mismo problema: **cómo mantener la interfaz
 y el estado sincronizados**. Así que esta experiencia espera familiarizarte con
 el concepto de _estado de pantalla_, y como cada cambio sobre el estado se va
@@ -129,9 +130,8 @@ a un _pedido_, la interfaz debe actualizar la lista del pedido y el total).
 ### Git y GitHub
 
 * [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [ ] Manejo de repositorios de GitHub (clone | fork)
 * [ ] Colaboración en Github (branches | pull requests | |tags)
-* [ ] Organización en Github (projects | issues | labels | milestones)
 
 ### HTTP
 
@@ -142,17 +142,6 @@ a un _pedido_, la interfaz debe actualizar la lista del pedido y el total).
 * [ ] [Codigos de status de HTTP.](https://dev.to/khaosdoctor/the-complete-guide-to-status-codes-for-meaningful-rest-apis-1-5c5)
 * [ ] Encodings y `JSON`.
 * [ ] [CORS.](https://developer.mozilla.org/es/docs/Web/HTTP/Access_control_CORS)
-
-### Angular
-
-* [ ] [Components & templates.](https://angular.io/guide/architecture-components#introduction-to-components)
-* [ ] [Directivas estructurales (ngIf / ngFor)](https://angular.io/guide/template-syntax#built-in-structural-directives)
-* [ ] [@Input | @Ouput](https://angular.io/guide/component-interaction#component-interaction)
-* [ ] [Creación y uso de servicios.](https://angular.io/guide/architecture-services#providing-services)
-* [ ] [Manejos de rutas.](https://angular.io/guide/router)
-* [ ] [Creación y uso Observables.](https://angular.io/guide/observables-in-angular)
-* [ ] [Uso de HttpClient.](https://angular.io/guide/http)
-* [ ] [Estilos de componentes (ngStyle / ngClass)](https://angular.io/guide/template-syntax#built-in-directives)
 
 ### React
 
@@ -194,7 +183,7 @@ a un _pedido_, la interfaz debe actualizar la lista del pedido y el total).
 ## 4. Consideraciones
 
 Este proyecto se debe "resolver" de a pares. Recuerda que deberas de consumir una
-API que desarrollaran tus compañeras, sin embargo no debes esperar a que esta API
+API que desarrollaran tus compañeros/as, sin embargo no debes esperar a que esta API
 este terminada para empezar a codear, puedes utilizar herramientas
 como [nock](https://github.com/nock/nock), [json-server](https://www.npmjs.com/package/json-server)
 o [mockoon](https://mockoon.com) para mockear la API.
@@ -207,7 +196,7 @@ La lógica del proyecto debe estar implementada completamente en JavaScript
 
 En este proyecto Sí está permitido usar librerías o frameworks
 (debes elegir entre [React](https://reactjs.org/) o
-[Angular](https://angular.io/)).
+[Vue](https://vuejs.org/)).
 
 La aplicación debe ser un _Single Page App_. Los pedidos los tomaremos desde una
 _tablet_, pero **no queremos una app nativa**, sino una web app que sea
@@ -259,16 +248,14 @@ Lo que debe ocurrir para que se satisfagan las necesidades del usuario.
 
 Lo acordado que debe ocurrir para decir que la historia está terminada.
 
-* Debes haber recibido _code review_ de al menos una compañera.
 * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
 * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
 ***
 
 #### [Historia de usuario 2] Mesero/a debe poder tomar pedido de cliente/a
 
-Yo como meserx quiero tomar el pedido de unx clientx para no depender de mi mala
+Yo como mesero/a quiero tomar el pedido de un/a cliente para no depender de mi mala
 memoria, para saber cuánto cobrar, y enviarlo a la cocina para evitar errores y
 que se puedan ir preparando en orden.
 
@@ -276,7 +263,7 @@ que se puedan ir preparando en orden.
 
 Lo que debe ocurrir para que se satisfagan las necesidades del usuario
 
-* Anotar nombre de clientx.
+* Anotar nombre de cliente.
 * Agregar productos al pedido.
 * Eliminar productos.
 * Ver resumen y el total de la compra.
@@ -287,18 +274,16 @@ Lo que debe ocurrir para que se satisfagan las necesidades del usuario
 
 Lo acordado que debe ocurrir para decir que la historia está terminada.
 
-* Debes haber recibido _code review_ de al menos una compañera.
 * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
 * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
 ***
 
 #### [Historia de usuario 3] Jefe de cocina debe ver los pedidos
 
-Yo como jefx de cocina quiero ver los pedidos de lxs clientxs en orden y
-marcar cuáles están listos para saber qué se debe cocinar y avisar a lxs meserxs
-que un pedido está listo para servirlo a un clientx.
+Yo como jefe/a de cocina quiero ver los pedidos de los clientes en orden y
+marcar cuáles están listos para saber qué se debe cocinar y avisar a los meseros
+que un pedido está listo para servirlo a un cliente.
 
 ##### Criterios de aceptación
 
@@ -309,14 +294,12 @@ que un pedido está listo para servirlo a un clientx.
 
 ##### Definición de terminado
 
-* Debes haber recibido _code review_ de al menos una compañera.
 * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
 * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
 ***
 
-#### [Historia de usuario 4] Meserx debe ver pedidos listos para servir
+#### [Historia de usuario 4] Mesero/a debe ver pedidos listos para servir
 
 Yo como meserx quiero ver los pedidos que están preparados para entregarlos
 rápidamente a lxs clientxs que las hicieron.
@@ -328,54 +311,10 @@ rápidamente a lxs clientxs que las hicieron.
 
 ##### Definición de terminado
 
-* Debes haber recibido _code review_ de al menos una compañera.
 * Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
 * Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 * Los datos se deben mantener íntegros, incluso después de que un pedido ha
   terminado. Todo esto para poder tener estadísticas en el futuro.
-
-***
-
-#### [Historia de usuario 5] Administrador(a) de tienda debe administrar a sus trabajadorxs
-
-Yo como administrador(a) de tienda quiero gestionar a los usuarios de
-la plataforma para mantener actualizado la informacion de mis trabajadorxs.
-
-##### Criterios de aceptación
-
-* Ver listado de trabajadorxs.
-* Agregar trabajadorxs.
-* Eliminar trabajadoxs.
-* Actualizar datos de trabajadorxs.
-
-##### Definición de terminado
-
-* Debes haber recibido _code review_ de al menos una compañera.
-* Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-* Desplegaste tu aplicación y has etiquetado tu versión (git tag).
-
-***
-
-#### [Historia de usuario 6] Administrador(a) de tienda debe administrar a sus productos
-
-Yo como administrador(a) de tienda quiero gestionar los productos
-para mantener actualizado el menú.
-
-##### Criterios de aceptación
-
-* Ver listado de productos.
-* Agregar productos.
-* Eliminar productos.
-* Actualizar datos de productos.
-
-##### Definición de terminado
-
-* Debes haber recibido _code review_ de al menos una compañera.
-* Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-* Desplegaste tu aplicación y has etiquetado tu versión (git tag).
 
 ***
 
@@ -384,7 +323,7 @@ para mantener actualizado el menú.
 ### Frameworks / libraries
 
 * [React](https://reactjs.org/)
-* [Angular](https://angular.io/)
+* [Vue](https://vuejs.org/)
 
 ### Herramientas
 
@@ -400,3 +339,14 @@ para mantener actualizado el menú.
 * [Tu primera Progressive Web App - Google developers](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=es)
 * [Progressive Web Apps - codigofacilito.com](https://codigofacilito.com/articulos/progressive-apps)
 * [Usando Service Workers - MDN](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+
+## 7. Entrega
+* Recomendamos emplear un máximo de 4 (cuatro) horas y enviar todo lo que puedas.
+* Se requiere de una cuenta de GitHub para realizar este ejercicio.
+Antes de comenzar a programar:
+* Realizar un Fork de este repositorio (https://github.com/Megabite-Food/frontend-test).
+* Clonar el fork a su máquina local git clone git@github.com:USERNAME/FORKED-PROJECT.git
+* Crear un branch en su cuenta de GitHub utilizando su nombre completo.
+Al finalizar, existen 2 (dos) opciones para entregar su proyecto:
+- Realizar un Commit de su proyecto, enviar un **Pull Request al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico [lespinoza@megabitefood.com](mailto:lespinoza@megabitefood.com) con asunto: [nombre]_[apellido]-resultado test [cargo].
+- Crear un archivo comprimido (.zip o .rar) de su proyecto y enviar a la siguiente dirección de correo electrónico [lespinoza@megabitefood.com](mailto:lespinoza@megabitefood.com) con asunto: [nombre]_[apellido]-resultado test [cargo]
